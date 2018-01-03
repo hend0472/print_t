@@ -4,9 +4,7 @@ import re
 import logging
 import os
 import sys
-from colorama import init
-init()
-# FOR WHATEVER REASON, COMPUTER UPDATED AND THIS STOPPED WORKING WITHOUT COLORAMA INIT
+
 
 def start_logging(file_name):
 	if os.path.isfile(file_name):
