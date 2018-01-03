@@ -59,4 +59,7 @@ def print_t(message, type_m='none'):
 	elif str(type_m).lower() == 'fail':
 		print('[' + str(datetime.datetime.now()) + '] ' + bcolors.FAILRED + str(message).rstrip() + bcolors.ENDC)
 		logging.error(message)
+	else:
+		print('[' + str(datetime.datetime.now()) + '] ' + str(message).rstrip())
+		logging.info(message)
 
